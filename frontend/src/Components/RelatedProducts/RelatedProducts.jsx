@@ -8,7 +8,7 @@ const RelatedProducts = ({category,id}) => {
   const [related,setRelated] = useState([]);
 
   useEffect(()=>{
-    fetch(`${backend_url}/relatedproducts`,{
+    fetch(`https://shopper-rlsw.onrender.com/relatedproducts`,{
       method: 'POST',
       headers: {
         Accept: 'application/json',

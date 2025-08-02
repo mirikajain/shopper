@@ -10,7 +10,10 @@ import men_banner from "./Components/Assets/banner_mens.png";
 import kid_banner from "./Components/Assets/banner_kids.png";
 import LoginSignup from "./Pages/LoginSignup";
 
-export const backend_url = 'http://localhost:4000';
+export const backend_url = process.env.REACT_APP_API_URL;
+
+
+
 export const currency = '₹';
 
 function App() {
